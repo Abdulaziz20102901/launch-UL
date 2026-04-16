@@ -736,4 +736,53 @@ nav .container .nav_button .nav_btn_2 button:active {
 }
 .questions .container .container_box_1 .container_box_1_button .container_box_2_btn button:active {
   transform: scale(0.9);
+}
+
+footer {
+  margin-top: 230px;
+}
+footer .container {
+  display: flex;
+  align-items: start;
+  gap: 140px;
+}
+footer .container .footer_logo img {
+  animation: logo 2s linear infinite;
+}
+@keyframes logo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+footer .container ul {
+  list-style: none;
+  line-height: 50px;
+}
+footer .container ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A1A1AA;
+  padding: 1px 30px;
+  border-radius: 10px 10px;
+  transition: all 0.3s ease;
+}
+footer .container ul li:nth-child(1) {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+footer .container ul li:hover {
+  transform: translateY(-5px);
+  color: #0e0e10;
+  background-color: #fdba74;
+  padding: 1px 30px;
+  box-shadow: 0px 0px 40px 15px #fdba74;
+  border-radius: 50px 10px 50px 10px;
+  cursor: pointer;
+}
+footer .container ul li:active {
+  transform: scale(0.9);
 }/*# sourceMappingURL=main.css.map */
